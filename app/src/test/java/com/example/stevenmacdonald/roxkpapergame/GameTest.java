@@ -40,6 +40,8 @@ public class GameTest {
     }
 
     @Test
-    publ
+    public void checkCanDraw () {
+        assertEquals("draw", game.getWinner("rock"));
+    }
 
 }
