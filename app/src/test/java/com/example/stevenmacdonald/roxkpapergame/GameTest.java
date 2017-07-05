@@ -23,5 +23,11 @@ public class GameTest {
         assertEquals("rock",game.getPlayerChoice());
     }
 
+    @Test
+    public void canSetPlayerChoice(){
+        game.setPlayerChoice("paper");
+        assertEquals("paper", game.getPlayerChoice());
+    }
+
 
 }
