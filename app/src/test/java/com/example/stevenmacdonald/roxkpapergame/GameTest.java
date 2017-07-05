@@ -3,6 +3,8 @@ package com.example.stevenmacdonald.roxkpapergame;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.Assert.*;
+
 /**
  * Created by stevenmacdonald on 05/07/2017.
  */

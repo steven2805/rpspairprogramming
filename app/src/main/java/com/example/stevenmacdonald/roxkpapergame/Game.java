@@ -12,4 +12,12 @@ public class Game {
         this.player = player;
 //        this.computer = computer;
     }
+
+    public String getPlayerChoice() {
+        return player;
+    }
+
+    public void setPlayerChoice(String player) {
+        this.player = player;
+    }
 }
