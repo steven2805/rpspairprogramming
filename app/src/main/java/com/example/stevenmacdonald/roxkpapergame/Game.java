@@ -1,16 +1,18 @@
 package com.example.stevenmacdonald.roxkpapergame;
 
-/**
- * Created by stevenmacdonald on 05/07/2017.
- */
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Game {
     private String player;
-//    private String computer;
+//    private String[] choices;
+
 
     public Game(String player) {
         this.player = player;
-//        this.computer = computer;
+        String[] choices = {"rock","paper","scissors"};
+
     }
 
     public String getPlayerChoice() {
@@ -20,4 +22,11 @@ public class Game {
     public void setPlayerChoice(String player) {
         this.player = player;
     }
+
+    public String getRandCompChoice() {
+        String[] choices = {"rock","paper","scissors"};
+        int rnd = new Random().nextInt(choices.length);
+        return choices[rnd];
+    }
+
 }
