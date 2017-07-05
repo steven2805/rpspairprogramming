@@ -30,6 +30,16 @@ public class GameTest {
     }
 
     @Test
-    
+    public void checkPlayerCanWin() {
+        assertEquals("you win!!!!!",game.getWinner("scissors"));
+    }
+
+    @Test
+    public void checkComputerCanWin() {
+        assertEquals("computer wins!!!!",game.getWinner("paper"));
+    }
+
+    @Test
+    publ
 
 }
