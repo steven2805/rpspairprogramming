@@ -40,8 +40,14 @@ public class GameTest {
     }
 
     @Test
-    public void checkCanDraw () {
+    public void checkCanDraw() {
         assertEquals("draw", game.getWinner("rock"));
+    }
+
+    @Test
+    public void checkInvalidChoice() {
+        game = new Game("gun");
+        assertEquals("that is not a valid choice - try again!", game.getWinner("rock"));
     }
 
 }

@@ -1,12 +1,14 @@
 package com.example.stevenmacdonald.roxkpapergame;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Game {
     private String player;
+    private String[] choices;
 
     public Game(String player) {
         this.player = player;
-        String[] choices = {"rock","paper","scissors"};
+        this.choices = new String[]{"rock", "paper", "scissors"};
 
     }
 
@@ -19,13 +21,15 @@ public class Game {
     }
 
     public String getRandCompChoice() {
-        String[] choices = {"rock","paper","scissors"};
+        //String[] choices = {"rock","paper","scissors"};
         int rnd = new Random().nextInt(choices.length);
         return choices[rnd];
     }
 
     public String getWinner(String computer){
-        if(player == computer) {
+        if(!Arrays.asList(choices).contains(player)) {
+            return "that is not a valid choice - try again!";
+        } else if(player == computer) {
             return "draw";
         } else if (player == "rock" && computer == "scissors") {
             return "you win!!!!!";
