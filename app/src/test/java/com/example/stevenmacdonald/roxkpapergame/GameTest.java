@@ -31,17 +31,18 @@ public class GameTest {
 
     @Test
     public void checkPlayerCanWin() {
-        assertEquals("you win!!!!!",game.getWinner("scissors"));
+        assertEquals("computer chose scissors you win !!",game.getWinner("scissors"));
     }
 
     @Test
     public void checkComputerCanWin() {
-        assertEquals("computer wins!!!!",game.getWinner("paper"));
+        game = new Game("scissors");
+        assertEquals("computer chose paper you win !!!",game.getWinner("paper"));
     }
 
     @Test
     public void checkCanDraw() {
-        assertEquals("draw", game.getWinner("rock"));
+        assertEquals("draw you and computer chose rock", game.getWinner("rock"));
     }
 
     @Test

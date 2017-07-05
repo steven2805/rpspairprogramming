@@ -32,7 +32,7 @@ public class Game {
         } else if(player == computer) {
             return "draw you and computer chose " + computer;
         } else if (player == "rock" && computer == "scissors") {
-            return "Computer chose scissors you win !!";
+            return "computer chose scissors you win !!";
         } else if (player == "paper" && computer == "rock") {
             return "computer chose rock you win !!!";
         } else if (player == "scissors" && computer == "paper") {
