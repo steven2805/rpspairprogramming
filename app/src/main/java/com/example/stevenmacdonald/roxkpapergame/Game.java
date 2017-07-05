@@ -30,15 +30,15 @@ public class Game {
         if(!Arrays.asList(choices).contains(player)) {
             return "that is not a valid choice - try again!";
         } else if(player == computer) {
-            return "draw";
+            return "draw you and computer chose " + computer;
         } else if (player == "rock" && computer == "scissors") {
-            return "you win!!!!!";
+            return "Computer chose scissors you win !!";
         } else if (player == "paper" && computer == "rock") {
-            return "you win!!!!!";
+            return "computer chose rock you win !!!";
         } else if (player == "scissors" && computer == "paper") {
-        return "you win!!!!!";
+        return "computer chose paper you win !!!";
         } else
-            return "computer wins!!!!";
+            return "computer chose " + computer + " you lose";
 
     }
 

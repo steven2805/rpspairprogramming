@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">roxkpapergame</string>
+    <!--<string-array name="choices">-->
+        <!--<item>rock</item>-->
+        <!--<item>paper</item>-->
+        <!--<item>scissors</item>-->
+    <!--</string-array>-->
+    <string name="input">Rock, paper or scissors ?</string>
+    <string name="play">Play game</string>
 </resources>
